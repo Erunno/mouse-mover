@@ -1,3 +1,4 @@
+import socket
 import logging
 from flask import send_from_directory, Flask, request, jsonify
 import math
@@ -66,6 +67,8 @@ def mouse_right_click():
 
 
 if __name__ == '__main__':
+    print(socket.gethostbyname(socket.gethostname()))
+
     app.run(
         host='0.0.0.0',
         debug=False,
