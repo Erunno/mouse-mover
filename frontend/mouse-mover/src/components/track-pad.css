@@ -1,0 +1,16 @@
+.track-pad {
+  --margin-vertical: 3px;
+  --margin-horizontal: 3px;
+  --border-width: 1px;
+
+  width: calc(100vw - var(--margin-horizontal) * 2 - var(--border-width) * 2);
+  height: calc(90vh - var(--margin-vertical) * 2 - var(--border-width) * 2);
+
+  margin-top: var(--margin-horizontal);
+  margin-left: var(--margin-vertical);
+
+  border: 2px solid black;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
